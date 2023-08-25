@@ -26,7 +26,7 @@ Como este projeto é baseado em tecnologias web padrão (HTML, CSS e JavaScript)
 
 ## Pré-Visualização
 
-![Pokedex Preview](https://github.com/Regismrs/js-developer-pokedex/blob/main/assets/imgs/preview-list.jpg)
+![Pokedex Preview](https://github.com/Regismrs/js-developer-pokedex/blob/main/assets/imgs/preview-list.jpeg)
 ![Pokedex Card Preview](https://github.com/Regismrs/js-developer-pokedex/blob/main/assets/imgs/preview-card.jpg)
 
 ## Notas Finais
