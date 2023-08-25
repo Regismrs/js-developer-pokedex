@@ -1,7 +1,5 @@
 # Trilha JS Developer - Desafio Pokedex
-#Santander Bootcamp 2023
-
-![Pokedex Banner](link_para_imagem_banner_da_pokedex)
+#Santander Bootcamp 2023 - Dev Full Stack
 
 Neste repositório, você encontrará minha implementação do desafio da Pokedex como parte do Santander Bootcamp 2023 - Dev Full Stack Java + Angular. O objetivo deste desafio era finalizar a construção de uma Pokedex utilizando apenas HTML, CSS e JavaScript para criar um layout interativo. A atividade focou em conceitos como promises e programação assíncrona.
 
@@ -28,7 +26,8 @@ Como este projeto é baseado em tecnologias web padrão (HTML, CSS e JavaScript)
 
 ## Pré-Visualização
 
-![Pokedex Preview](link_para_imagem_de_previsualizacao)
+![Pokedex Preview](https://github.com/Regismrs/js-developer-pokedex/blob/main/assets/imgs/preview-list.jpg)
+![Pokedex Card Preview](https://github.com/Regismrs/js-developer-pokedex/blob/main/assets/imgs/preview-card.jpg)
 
 ## Notas Finais
 
