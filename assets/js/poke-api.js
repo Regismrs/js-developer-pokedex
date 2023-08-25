@@ -23,6 +23,16 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeApiDetailToPokemon)
 }
 
+pokeApi.getPokemonDetailById = async (id) => {
+    return fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
+        .then((response) => response.json())
+}
+
+pokeApi.getPokemonSpecieDetailById = async (id) => {
+    return fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
+        .then((response) => response.json())
+}
+
 pokeApi.getPokemons = (offset = 0, limit = 5) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 

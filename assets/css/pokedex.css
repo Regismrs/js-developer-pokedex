@@ -7,74 +7,92 @@
 }
 
 .normal {
+    --bgcolor: #a6a877;
     background-color: #a6a877;
 }
 
 .grass {
+    --bgcolor: #77c850;
     background-color: #77c850;
 }
 
 .fire {
+    --bgcolor: #ee7f30;
     background-color: #ee7f30;
 }
 
 .water {
+    --bgcolor: #678fee;
     background-color: #678fee;
 }
 
 .electric {
+    --bgcolor: #f7cf2e;
     background-color: #f7cf2e;
 }
 
 .ice {
+    --bgcolor: #98d5d7;
     background-color: #98d5d7;
 }
 
 .ground {
+    --bgcolor: #dfbf69;
     background-color: #dfbf69;
 }
 
 .flying {
+    --bgcolor: #a98ff0;
     background-color: #a98ff0;
 }
 
 .poison {
+    --bgcolor: #a040a0;
     background-color: #a040a0;
 }
 
 .fighting {
+    --bgcolor: #bf3029;
     background-color: #bf3029;
 }
 
 .psychic {
+    --bgcolor: #f65687;
     background-color: #f65687;
 }
 
 .dark {
+    --bgcolor: #725847;
     background-color: #725847;
 }
 
 .rock {
+    --bgcolor: #b8a137;
     background-color: #b8a137;
 }
 
 .bug {
+    --bgcolor: #a8b720;
     background-color: #a8b720;
 }
 
 .ghost {
+    --bgcolor: #6e5896;
     background-color: #6e5896;
 }
 
 .steel {
+    --bgcolor: #b9b7cf;
     background-color: #b9b7cf;
 }
 
 .dragon {
+    --bgcolor: #6f38f6;
     background-color: #6f38f6;
 }
 
 .fairy {
+    --bgcolor: #f9aec7;
     background-color: #f9aec7;
 }
 
@@ -163,3 +181,116 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+#overlayer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(5, 5, 5, .8);
+    filter: blur(100);
+    display: none;
+    justify-content:space-around;
+}
+
+#overlayer .card-detail {
+    position: relative;
+    width: 360px;
+    min-height: 480px;
+    margin:auto;
+    /*background: #efefef;*/
+    display: grid;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.card-detail .header {
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+}
+
+.header .name {
+    margin-top: -2rem;
+}
+
+.jpn-name {
+    color: rgba(255, 255, 255, .5);
+}
+
+.header .number {
+    color: #000;
+    opacity: .3;
+}
+
+.card-detail .photo {
+    position: relative;
+    width: 60%;
+    max-height: 210px;
+    margin: 0 25% -1rem;
+    z-index: 3;
+}
+
+.card-detail .stencil {
+    opacity: .3;
+    z-index: 0;
+    width: 40%;
+    position: absolute;
+    right: 10px;
+    top: 150px;
+}
+
+.card-detail .body {
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: -2rem;
+    background: #fff;
+    z-index: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-detail .gradient {
+    background: var(--bgcolor) linear-gradient(90deg, rgba(0, 0, 0, .1) 0px, rgba(0, 0, 0, .1) 10px, rgba(0,0,0,0) 10px, rgba(0, 0, 0, 0));
+    background-size: 40px 40px;
+    background-repeat: repeat;
+}
+
+.card-detail .body nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.card-detail .body nav a.active {
+    border-bottom: 3px solid #678fee;
+}
+
+.card-detail #stats-tab,
+.card-detail #moves-tab {
+    display: none;
+}
+
+.card-detail #about-tab span,
+.card-detail #stats-tab span,
+.card-detail #moves-tab span {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted #fff;
+    margin: .2rem 3rem;
+    color: #747171;
+}
+
+.card-detail meter{
+    display: flex;
+    position: relative;
+    border: 1px solid #333;
+    height: 24px;
+}
+
+.card-detail meter::before {
+    content:attr(value);
+    font-weight: bolder;
+    width: 3.5rem;
+    color: #303030;
+}
+
+
